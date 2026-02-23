@@ -1,3 +1,4 @@
+# arithmetic.py
 def hitung_aritmatika():
     print("=== Kalkulator Aritmatika ===")
     print("1. Tambah (+)")
@@ -7,7 +8,7 @@ def hitung_aritmatika():
     print("5. Modulus (%)")
     print("6. Pangkat (**)")
     
-    pilihan = input("Pilih operasi (1-6): ")
+    pilihan = input("Pilih operasi (1-6): ").strip()
     
     try:
         a = float(input("Masukkan angka pertama: "))
