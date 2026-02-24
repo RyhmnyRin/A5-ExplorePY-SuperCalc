@@ -18,7 +18,7 @@ if pilih == "1":
 elif pilih == "2":
     Science_Specialist.menu_science()
 elif pilih == "3":
-    konversiPanjang.konversi_Panjang()
+    konversiPanjang.convert_panjang()
 elif pilih == "4":
     print("Terima kasih telah menggunakan Kalkulator Super!")
 
