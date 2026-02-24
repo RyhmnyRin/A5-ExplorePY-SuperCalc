@@ -1,6 +1,3 @@
-print("=== KONVERSI SATUAN PANJANG ===")
-
-#dictionary satuan panjang (berbasis meter)
 satuan_panjang = {
     "km": 1000,
     "hm": 100,
@@ -13,23 +10,22 @@ satuan_panjang = {
     "inch": 0.0254,
 }
 
-#tampilkan daftar satuan
-print("\nSatuan yang tersedia: ")
-for unit in satuan_panjang:
-    print("-", unit)
+def convert_panjang():
+    # --- Pindahkan semua PRINT dan INPUT ke sini ---
+    print("=== KONVERSI SATUAN PANJANG ===")
 
-#input user
-satuan_awal = input("\nDari satuan: ").lower()
-satuan_akhir = input("Ke satuan: ").lower()
-value = float(input("Nilai yang ingin dikonversi: "))
+    #tampilkan daftar satuan
+    print("\nSatuan yang tersedia: ")
+    for unit in satuan_panjang:
+        print("-", unit)
 
-def convert_panjang(value, satuan_awal, satuan_akhir):
-    """
-    Mengkonversi satuan yang diinginkan user ke dalam base unit (meter):
-    - value dari satuan_awal dikonversi ke meter
-    - dari meter dikonversi ke satuan_akhir
-    """
+    #input user (Sekarang ada di dalam fungsi, jadi aman)
+    satuan_awal = input("\nDari satuan: ").lower()
+    satuan_akhir = input("Ke satuan: ").lower()
+    value = float(input("Nilai yang ingin dikonversi: "))
 
+    # --- Logika asli temanmu (tidak diubah) ---
+    
     #validasi satuan
     if satuan_awal not in satuan_panjang:
         print("Satuan tidak valid!")
@@ -47,7 +43,4 @@ def convert_panjang(value, satuan_awal, satuan_akhir):
 
     #output
     print(f"\n{value} {satuan_awal} = {hasil:.4f} {satuan_akhir}")
-
-convert_panjang(value, satuan_awal, satuan_akhir)
-
 

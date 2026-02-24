@@ -1,7 +1,7 @@
 import arithmetic
 import konversiPanjang
 import Science_Specialist
-import informtatics_tools
+import Informatics_tools
 
 print("===============================================")
 print("============== KALKULATOR SUPER ===============")
@@ -22,7 +22,7 @@ elif pilih == "2":
 elif pilih == "3":
     konversiPanjang.convert_panjang()
 elif pilih == "4":
-    informtatics_tools.menu_informatika()
+    Informatics_tools.menu_informatika()
 elif pilih == "0":
     print("Terima kasih telah menggunakan Kalkulator Super!")
 
